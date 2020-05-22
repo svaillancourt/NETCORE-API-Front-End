@@ -16,5 +16,16 @@ if ( allToDos )
     } );
 }
 
-// Grab the create Todo Form.
-const createTodo = document.getElementById('create');
+// Grab the "create" ToDo form.
+const createToDo = document.getElementById( 'create' );
+if ( createToDo )
+{
+  createToDo.addEventListener( 'submit', event => {
+    event.preventDefault(); // Stop form from real submit.
+    // Create the new todo.
+    axios.post( "https://localhost:44390/api/ToDoItems/" )
+      .then( response => { // On success, redirect to full list.
+        document.location = './index.html'
+      } );
+  } );
+}
