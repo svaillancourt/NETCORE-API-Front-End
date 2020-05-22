@@ -1,49 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>To-Do API Front-End | Create</title>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To-Do API Front-End | Create</title>
 
-    <!-- Vendor styles -->
-    <link rel="stylesheet" href="./vendor/bootstrap/css/bootstrap.min.css" />
+  <!-- Vendor styles -->
+  <link rel="stylesheet" href="./vendor/bootstrap/css/bootstrap.min.css">
 
-    <!-- Our styles. -->
-    <link rel="stylesheet" href="./css/main.css" />
+  <!-- Our styles. -->
+  <link rel="stylesheet" href="./css/main.css">
 
-    <!-- Vendor scripts. -->
-    <script src="./vendor/jquery/jquery.min.js"></script>
-    <script src="./vendor/bootstrap/js/bootstrap.min.js"></script>
-    <script src="./vendor/axios/axios.min.js"></script>
+  <!-- Vendor scripts. -->
+  <script src="./vendor/jquery/jquery.min.js"></script>
+  <script src="./vendor/bootstrap/js/bootstrap.min.js"></script>
+  <script src="./vendor/axios/axios.min.js"></script>
 
-    <!-- Our scripts. -->
-    <script src="./js/scripts.js" defer></script>
-  </head>
-  <body>
-    <h1>To-Do API Front-End | Create</h1>
-    <ul class="nav">
-      <li class="nav-item">
-        <a class="nav-link" href="./index.html">Home</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link active" href="./create.html">Create</a>
-      </li>
-    </ul>
-
-    <h2>Create To-Do</h2>
-
-    <!-- source https://getbootstrap.com/docs/4.5/components/forms/#overview -->
-
-    <form id="create">
-      <div class="form-group">
-        <label for="task">Task</label>
-        <input type="text" class="form-control" id="task" />
+  <!-- Our scripts. -->
+  <script src="./js/scripts.js" defer></script>
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <h1>To-Do API Front-End | Create</h1>
+        <ul class="nav">
+          <li class="nav-item">
+            <a class="nav-link" href="./index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="./create.html">Create</a>
+          </li>
+        </ul>
+        <h2>Create To-Do</h2>
+        <form id="create">
+          <div class="form-group">
+            <label for="task">Task</label>
+            <input type="text" class="form-control" id="task">
+          </div>
+          <div class="form-group form-check">
+            <input type="checkbox" class="form-check-input" id="completed" value="true">
+            <label class="form-check-label" for="completed">Completed</label>
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+        </div>
       </div>
-      <div class="form-group form-check">
-        <input type="checkbox" class="form-check-input" id="completed" />
-        <label class="form-check-label" for="completed">Completed</label>
-      </div>
-      <button type="submit" class="btn btn-primary">Submit</button>
-    </form>
-  </body>
+    </div>
+</body>
 </html>
